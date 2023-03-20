@@ -1,0 +1,50 @@
+/*------------------------------------------------- SEZIONE COMUNE DEL SITO -------------------------------------------------*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white
+}
+:root{
+    --max-lunghezza: 65%;
+}
+.btn{
+    border-radius: 1em;
+    padding: .5em;
+    max-width: max-content;
+    max-height: max-content;
+}
+/*------------------------------------------------- SEZIONE COMUNE DEL SITO -------------------------------------------------*/
+
+/*------------------------------------------------- HEADER -------------------------------------------------*/
+header{
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+    background-color: #0084FD;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--max-lunghezza);
+}
+#nav-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+}
+#btn-bianco{
+    background-color: white;
+    color: black;
+}
+/*------------------------------------------------- HEADER -------------------------------------------------*/
+
+/*------------------------------------------------- MAIN -------------------------------------------------*/
+
+/*------------------------------------------------- MAIN -------------------------------------------------*/
+
+/*------------------------------------------------- AAA -------------------------------------------------*
