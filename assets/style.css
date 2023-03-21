@@ -113,8 +113,7 @@ main:nth-child(odd){
 #tabella-card-grande{
     display: flex;
     flex-direction: row;
-    
-    width: calc(100% / 3 * 2 - 2em);
+    width: calc(100% / 3 * 2 + 2em);
 }
 #tabella-card-grande .tabella-scritte{
     align-items: start;
