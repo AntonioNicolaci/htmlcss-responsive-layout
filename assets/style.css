@@ -8,12 +8,29 @@
 }
 :root{
     --max-lunghezza: 65%;
+    --colore-blu: #0084FD;
 }
 .btn{
     border-radius: 1em;
     padding: .5em;
     max-width: max-content;
     max-height: max-content;
+}
+.btn-bianco{
+    background-color: white;
+    color: black;
+}
+.btn-blu{
+    background-color: var(--colore-blu);
+    padding-right: 3em;
+    padding-left: 3em;
+    color: white;
+    font-weight: bold;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 /*------------------------------------------------- SEZIONE COMUNE DEL SITO -------------------------------------------------*/
 
@@ -22,7 +39,7 @@ header{
     display: flex;
     justify-content: center;
     padding: 1em 0;
-    background-color: #0084FD;
+    background-color: var(--colore-blu);
 }
 nav{
     display: flex;
@@ -37,13 +54,81 @@ nav{
     align-items: center;
     gap: 2em;
 }
-#btn-bianco{
-    background-color: white;
-    color: black;
-}
 /*------------------------------------------------- HEADER -------------------------------------------------*/
 
 /*------------------------------------------------- MAIN -------------------------------------------------*/
+main:nth-child(odd){
+    background-color: #9792E4;
+}
+
+/*---------- TABELLA FUNZIONI ----------*/
+.tabella-card{
+    background-color: #B5DDFF;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    width: calc(100% / 3);
+}
+.tabella-card-piccolo{
+    flex-direction: column;
+}
+.tabella-scritte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 1.5em;
+    gap: 2em;
+}
+.tabella-card-allineamento-centro{
+    text-align: center;
+}
+#tabella{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--max-lunghezza);
+    margin-top: 3em;
+    row-gap: 2em;
+}
+.tabella-svg{
+    color: var(--colore-blu);
+    width: 20%;
+
+}
+#tabella h3{
+    font-size: 22px;
+    color: var(--colore-blu);
+}
+#tabella p{
+    color: #5a6e7f;
+    font-size: 18px;
+    font-weight: bold;
+}
+#tabella-alto, #tabella-basso{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+#tabella-card-grande{
+    display: flex;
+    flex-direction: row;
+    
+    width: calc(100% / 3 * 2 - 2em);
+}
+#tabella-card-grande .tabella-scritte{
+    align-items: start;
+}
+#tabella-card-grande img{
+    align-self: flex-end;
+    padding-right: 4em;
+    max-width: 50%;
+    max-height: 75%;
+}
+/*---------- TABELLA FUNZIONI ----------*/
+
+
+
 
 /*------------------------------------------------- MAIN -------------------------------------------------*/
 
